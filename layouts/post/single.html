@@ -9,10 +9,15 @@
           {{ .Content }}
         </div>
         {{ partial "sharing.html" .}}
-        {{ partial "comments.html" .}}
+        <br/>
+        <section>
+          {{ partial "comments.html" .}}
+        </section>
+        <section>
+          {{ partial "footer.html" .}}
+        </section>
       </div>
     </div>
-
   </body>
   {{ partial "script.html" .}}
 </html>
